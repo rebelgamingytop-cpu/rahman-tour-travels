@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahman Tour Travels</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+
+header{
+background:#000;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:32px;
+}
+
+.hero{
+padding:40px 20px;
+text-align:center;
+background:#111;
+color:#fff;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 25px;
+background:#25D366;
+color:#fff;
+text-decoration:none;
+border-radius:10px;
+margin-top:15px;
+font-size:18px;
+}
+
+.card{
+background:#fff;
+margin:15px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+background:#000;
+color:#fff;
+border:none;
+border-radius:10px;
+font-size:18px;
+}
+
+.car{
+width:100%;
+border-radius:12px;
+margin-top:10px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:24px;
+}
+
+.call{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#007bff;
+color:#fff;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:24px;
+}
+
+footer{
+background:#000;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>RAHMAN TOUR TRAVELS</h1>
+<p>Safe & Trusted Cab Service</p>
+</header>
+
+<div class="hero">
+<h2>Book Your Ride Instantly</h2>
+<p>Airport • Outstation • Local Ride</p>
+
+<a class="btn"
+href="https://wa.me/918892574765?text=Hello%20Rahman%20Tour%20Travels">
+Book On WhatsApp
+</a>
+</div>
+
+<div class="card">
+<h2>Cab Booking</h2>
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="text" id="pickup" placeholder="Pickup Location">
+
+<input type="text" id="drop" placeholder="Drop Location">
+
+<input type="date" id="date">
+
+<input type="number" id="phone" placeholder="Phone Number">
+
+<button onclick="sendBooking()">Book Now</button>
+</div>
+
+<div class="card">
+<h2>Our Services</h2>
+
+<p>✔ Airport Pickup & Drop</p>
+<p>✔ Outstation Trips</p>
+<p>✔ Local City Ride</p>
+<p>✔ 24/7 Service</p>
+</div>
+
+<div class="card">
+<h2>Our Car</h2>
+
+<img class="car"
+src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1000">
+</div>
+
+<a class="whatsapp"
+href="https://wa.me/918892574765">
+💬
+</a>
+
+<a class="call"
+href="tel:8892574765">
+📞
+</a>
+
+<script>
+function sendBooking(){
+
+let name =
+document.getElementById("name").value;
+
+let pickup =
+document.getElementById("pickup").value;
+
+let drop =
+document.getElementById("drop").value;
+
+let date =
+document.getElementById("date").value;
+
+let phone =
+document.getElementById("phone").value;
+
+let msg =
+"RAHMAN TOUR TRAVELS BOOKING\n\n";
+
+msg += "Name: " + name + "\n";
+msg += "Pickup: " + pickup + "\n";
+msg += "Drop: " + drop + "\n";
+msg += "Date: " + date + "\n";
+msg += "Phone: " + phone;
+
+window.location.href =
+"https://wa.me/918892574765?text="
++ encodeURIComponent(msg);
+
+}
+</script>
+
+<footer>
+© Rahman Tour Travels
+</footer>
+
+</body>
+</html>
